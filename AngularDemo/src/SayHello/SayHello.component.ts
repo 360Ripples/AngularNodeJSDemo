@@ -12,6 +12,7 @@ export class SayHelloComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getMessage().subscribe((message) => {
+      console.log("Say Hello got the message")
       this.message = message;
     });
 }

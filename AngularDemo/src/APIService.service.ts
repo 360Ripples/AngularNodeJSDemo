@@ -14,6 +14,7 @@ export class APIServiceService {
   }
 
   getMessage(): Observable<string> {
+    console.log("APISErvice get message trigerred")
     return this.http.get(this.apiUrl, { responseType: 'text' });
   }
 
